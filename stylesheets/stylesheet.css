@@ -6,31 +6,34 @@
 
 }
 
-.category {
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 100px;
+    column-gap: 5%;
+    row-gap: 10%;
 
 
+
+
+}
+
+.category {
+    display: grid;
+    border: 0.1em solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
 }
 
 .categorylist {
     display: grid;
     justify-items: center;
 
-    border: 0.2em black solid;
-
-
 }
 
-
-
 .img {
-    width: 20%;
-
-
+    margin-left: 8rem;
+    width: 50%;
 
 
 }

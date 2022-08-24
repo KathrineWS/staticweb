@@ -1,3 +1,7 @@
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -119,4 +123,16 @@ ul {
     display: grid;
     justify-items: center;
     font-size: 50px;
+}
+
+#headerlist {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    display: grid;
+    column-gap: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
 }

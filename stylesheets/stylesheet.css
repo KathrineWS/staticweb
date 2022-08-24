@@ -89,3 +89,34 @@ ul {
     font-size: 20px;
     column-gap: 5%;
 }
+
+#main3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.productinfo {
+
+
+
+    border: 0.1em solid black;
+
+
+}
+
+.sectioninfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#producth2 {
+    font-size: 40px;
+    display: grid;
+
+}
+
+#buy {
+    display: grid;
+    justify-items: center;
+    font-size: 50px;
+}

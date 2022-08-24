@@ -5,7 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>product list</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="/stylesheets/stylesheet.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">Front page</a>
+          </li>
+          <li>
+            <a href="category.html">Categories</a>
+          </li>
+          <li>
+            <a href="product.html">Products</a>
+          </li>
+        </ul>
+      </div>
+      <h1>Sahara Team India Fanwear Round Neck Jersey</h1>
+      <h3>price 895DKK</h3>
+    </header>
+    <main id="main3">
+      <img src="images/tshirt.jpg" at="image of tshirt" />
+      <h2 id="producth2">Product information</h2>
+
+      <div class="productinfo">
+        <section class="sectioninfo">
+          <h3>Brand</h3>
+          <p>Nike</p>
+          <h3>Model name</h3>
+          <p>Sahara Team India Fanwear Round Neck Jersey</p>
+          <h3>color</h3>
+          <p>Blue</p>
+        </section>
+
+        <section class="sectioninfo">
+          <h3>Size</h3>
+          <!-- <p>down below insert hmlt for check out page</p> -->
+          <form action="action_page.php">
+            <label for="size">Choose size</label>
+            <select name="size" id="size">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <br /><br />
+          </form>
+        </section>
+      </div>
+      <div>
+        <section id="buy">
+          <a href="product.html">BUY NOW</a>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

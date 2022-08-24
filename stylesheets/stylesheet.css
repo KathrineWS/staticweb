@@ -1,4 +1,4 @@
-#header1 {
+.header {
     display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -6,7 +6,7 @@
 
 }
 
-main {
+#main1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -31,9 +31,50 @@ main {
 
 }
 
+/* cant get my justify-content/item to work */
+
+
 .img {
-    margin-left: 8rem;
+    margin-left: 7.7rem;
     width: 50%;
 
 
+}
+
+#h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: 0.2rem solid black;
+    display: grid;
+    justify-items: center;
+}
+
+#main2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10%;
+    column-gap: 5%;
+}
+
+.product {
+    display: grid;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.productlist {
+
+    display: grid;
+    justify-items: center;
+}
+
+.img2 {
+    width: 50%;
+    margin-left: 5rem;
+
+}
+
+a {
+    color: black;
 }

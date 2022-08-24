@@ -1,9 +1,36 @@
-main {}
+#header1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+
+}
+
+.category {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 100px;
+
+
+}
 
 .categorylist {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px auto 80px;
-    column-gap: 10px;
-    row-gap: 15px;
+    justify-items: center;
+
+    border: 0.2em black solid;
+
+
+}
+
+
+
+.img {
+    width: 20%;
+
+
+
+
 }

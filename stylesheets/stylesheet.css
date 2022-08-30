@@ -2,6 +2,10 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -38,8 +42,8 @@ header {
 /* cant get my justify-content/item to work */
 
 
-.img {
-    margin-left: 7.7rem;
+.categorylist a {
+
     width: 50%;
 
 

@@ -9,7 +9,14 @@ function handleProductList(data) {
   data.forEach(showProduct);
 }
 
-function showProduct(product) {}
+function showProduct(product) {
+  const template = document.querySelector("#smallProductTemp").content;
+  const copy = template.cloneNode(true);
+
+  const parent = document.querySelector("main");
+
+  parent.appendChild(copy);
+}
 
 /* <article class="smallProduct">
           <img

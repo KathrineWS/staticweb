@@ -1,29 +1,57 @@
 header {
+    display: grid;
+    justify-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
 }
 
 img {
     max-width: 100%;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
 
 }
 
-#main1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 5%;
-    row-gap: 10%;
+
+.productlist article.soldOut img {
+    opacity: 0.5;
+}
+
+.productlist article.soldOut ::before {
+    content: "Sold Out";
+    position: absolute;
+    background: var(--color);
+    color: var(--background-color);
 
 
+}
 
+.productlist article .discount,
+.productlist article .priceItem span {
+    display: none;
+}
 
+.productlist article.onSale .discount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount>p {
+    margin-bottom: 0;
+}
+
+.productlist article.onSale .priceItem span {
+    display: initial;
+}
+
+.productlist article {
+    margin-bottom: 1rem;
 }
 
 .category {
@@ -57,13 +85,6 @@ img {
     justify-items: center;
 }
 
-#main2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 10%;
-    column-gap: 5%;
-}
 
 .product {
     display: grid;
@@ -98,10 +119,7 @@ ul {
     column-gap: 5%;
 }
 
-#main3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 50%;
-}
+
 
 .productimage {
     width: 50%;
@@ -134,9 +152,6 @@ ul {
     font-size: 50px;
 }
 
-#headerlist {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 /* .navbar {
     display: grid;
@@ -145,3 +160,12 @@ ul {
 
 
 } */
+
+
+
+@media screen and (min-width: 500px) {
+    header main nav {
+        display: grid;
+        column-count: 2;
+    }
+}

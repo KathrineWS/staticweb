@@ -30,7 +30,8 @@ function showProduct(product) {
   if (product.discount) {
     copy.querySelector("article").classList.add("onSale");
 
-    copy.querySelector(".discount p").textContent = "DISCOUNT";
+    copy.querySelector(".discount p").textContent =
+      (product.price * product.discount) / 100; //"DISCOUNT";
   }
   const parent = document.querySelector("main");
   parent.appendChild(copy);

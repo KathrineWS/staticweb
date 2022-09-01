@@ -23,17 +23,16 @@ function showProduct(product) {
     "img"
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
 
-  const parent = document.querySelector("main");
-
-  parent.appendChild(copy);
-  console.log(product.soldout);
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldOut");
   }
+  if (product.discount) {
+    copy.querySelector("article").classList.add("onSale");
 
-  // if (product.discount) {
-  //   copy.querySelector("article").classList.add("onSale");
-  // }
+    copy.querySelector(".discount p").textContent = "DISCOUNT";
+  }
+  const parent = document.querySelector("main");
+  parent.appendChild(copy);
 }
 
 /* <article class="smallProduct">

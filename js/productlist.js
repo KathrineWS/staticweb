@@ -26,14 +26,14 @@ function showProduct(product) {
   const parent = document.querySelector("main");
 
   parent.appendChild(copy);
+  console.log(product.soldout);
+  if (product.soldout) {
+    copy.querySelector("article").classList.add("soldOut");
+  }
 
-  //if (product.soldout) {
-  //copy.querySelector("article").classList.add("soldOut");
-  //}
-
-  //   //   if (product.discount) {
-  //   //     copy.querySelector("article").classList.add("onSale");
-  //   //   }
+  // if (product.discount) {
+  //   copy.querySelector("article").classList.add("onSale");
+  // }
 }
 
 /* <article class="smallProduct">

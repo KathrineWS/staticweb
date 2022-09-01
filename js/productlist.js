@@ -13,7 +13,8 @@ function handleProductList(data) {
 function showProduct(product) {
   const template = document.querySelector("#smallProductTemp").content;
   const copy = template.cloneNode(true);
-
+  // document.querySelector(".whatProduct .thisProduct").textContent =
+  //   product.category;
   //soldOut onSale
   copy.querySelector(
     ".item"

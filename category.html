@@ -26,12 +26,12 @@
     </header>
     <main>
       <template id="categoryTemp">
-        <article class="categorylist" id="acc">
-          <h2 class="catName">Accessories</h2>
-          <a href="product.html"
-            ><img src="images/tshirt.jpg" alt="image of t-shirt" class="img"
-          /></a></article
-      ></template>
+        <section class="categorylist">
+          <a href="product.html">
+            <h2 class="catName">Accessories</h2>
+          </a>
+        </section></template
+      >
 
       <!-- <div class="category">
         <section class="categorylist" id="apparel">
@@ -75,5 +75,14 @@
       </div> -->
     </main>
     <script src="js/category.js"></script>
+    <!-- <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const answer = urlParams.get("answer");
+      if (answer === "yes") {
+        document.querySelector(".cat").remove();
+      } else {
+        document.querySelector(".dog").remove();
+      }
+    </script> -->
   </body>
 </html>

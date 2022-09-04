@@ -1,3 +1,8 @@
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+//const start = urlParams.get("start");
+//console.log(id);
+
 const url = `https://kea-alt-del.dk/t7/api/products/${id}`;
 
 fetch(url)
